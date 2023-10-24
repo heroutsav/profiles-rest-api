@@ -697,4 +697,12 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDMbv4zSIXlkB8Uo4O1q5eoJ5XTnP5bwNRJDFAZNed8
 
 Ubuntu 18.04.6 LTS ubuntu-bionic ttyS0
 
-ubuntu-bionic login: 
+ubuntu-bionic login: [ 9306.215867] watchdog: BUG: soft lockup - CPU#1 stuck for 2391s! [apport:3167]
+[ 9306.216603] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 9306.218734] 	1-...!: (1 ticks this GP) idle=1c2/140000000000001/0 softirq=34806/34806 fqs=0 
+[ 9306.218736] 	(detected by 0, t=91852 jiffies, g=19261, c=19260, q=29)
+[ 9306.222183] rcu_sched kthread starved for 91852 jiffies! g19261 c19260 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[ 9306.226098] INFO: rcu_sched detected stalls on CPUs/tasks:
+[ 9306.227016] 	(detected by 0, t=641610 jiffies, g=19261, c=19260, q=35)
+[ 9306.228522] All QSes seen, last rcu_sched kthread activity 641610 (4297219254-4296577644), jiffies_till_next_fqs=1, root ->qsmask 0x0
+[ 9306.232232] rcu_sched kthread starved for 641610 jiffies! g19261 c19260 f0x2 RCU_GP_WAIT_FQS(3) ->state=0x200 ->cpu=0
