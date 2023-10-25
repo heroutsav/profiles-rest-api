@@ -706,3 +706,99 @@ ubuntu-bionic login: [ 9306.215867] watchdog: BUG: soft lockup - CPU#1 stuck f
 [ 9306.227016] 	(detected by 0, t=641610 jiffies, g=19261, c=19260, q=35)
 [ 9306.228522] All QSes seen, last rcu_sched kthread activity 641610 (4297219254-4296577644), jiffies_till_next_fqs=1, root ->qsmask 0x0
 [ 9306.232232] rcu_sched kthread starved for 641610 jiffies! g19261 c19260 f0x2 RCU_GP_WAIT_FQS(3) ->state=0x200 ->cpu=0
+[25196.235710] watchdog: BUG: soft lockup - CPU#1 stuck for 3507s! [apport:3902]
+[25196.235731] INFO: rcu_sched self-detected stall on CPU
+[25196.240496] INFO: rcu_sched detected stalls on CPUs/tasks:
+[25196.240510] 	0-...!: (1 ticks this GP) idle=046/140000000000001/0 softirq=527540/527540 fqs=0 
+[25196.240511] 	(detected by 1, t=392158 jiffies, g=59842, c=59841, q=18)
+[25196.241567] rcu_sched kthread starved for 392158 jiffies! g59842 c59841 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=1
+[25196.242511] 	0-...!: (1 ticks this GP) idle=046/140000000000001/0 softirq=527540/527540 fqs=0 
+[25196.244764] 	 (t=392158 jiffies g=59842 c=59841 q=18)
+[25196.250075] rcu_sched kthread starved for 392158 jiffies! g59842 c59841 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=1
+[25196.257080] INFO: rcu_sched self-detected stall on CPU
+[25196.258339] INFO: rcu_sched detected stalls on CPUs/tasks:
+[25196.259231] 	0-...!: (2 ticks this GP) idle=046/140000000000001/0 softirq=527540/527540 fqs=0 
+[25196.266726] 	 (t=941919 jiffies g=59842 c=59841 q=69)
+[25196.266760] 	0-...!: (2 ticks this GP) idle=046/140000000000001/0 softirq=527540/527540 fqs=0 
+[25196.268201] rcu_sched kthread starved for 941919 jiffies! g59842 c59841 f0x2 RCU_GP_WAIT_FQS(3) ->state=0x0 ->cpu=1
+[25196.272188] 	(detected by 1, t=941919 jiffies, g=59842, c=59841, q=69)
+[25196.278648] rcu_sched kthread starved for 941919 jiffies! g59842 c59841 f0x2 RCU_GP_WAIT_FQS(3) ->state=0x0 ->cpu=1
+[28910.519320] INFO: rcu_sched self-detected stall on CPU
+[28910.519322] INFO: rcu_sched self-detected stall on CPU
+[28910.519327] 	1-...!: (1 ticks this GP) idle=24e/140000000000001/0 softirq=85195/85195 fqs=0 
+[28910.525520] 	 (t=379231 jiffies g=59861 c=59860 q=9)
+[28910.525557] 	0-...!: (1 GPs behind) idle=046/140000000000001/0 softirq=527608/527609 fqs=0 
+[28910.526427] rcu_sched kthread starved for 379231 jiffies! g59861 c59860 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=1
+[28910.529659] 	 (t=379231 jiffies g=59861 c=59860 q=9)
+[28910.532394] rcu_sched kthread starved for 379231 jiffies! g59861 c59860 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=1
+[28910.541079] INFO: rcu_sched self-detected stall on CPU
+[28910.541082] INFO: rcu_sched self-detected stall on CPU
+[28910.542763] 	0-...!: (1 GPs behind) idle=046/140000000000001/0 softirq=527608/527609 fqs=0 
+[28910.545574] 	 (t=928993 jiffies g=59861 c=59860 q=9)
+[28910.545598] 	1-...!: (2 ticks this GP) idle=24e/140000000000001/0 softirq=85195/85195 fqs=0 
+[28910.546493] rcu_sched kthread starved for 928993 jiffies! g59861 c59860 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x0 ->cpu=1
+[28910.547950] 	 (t=928993 jiffies g=59861 c=59860 q=9)
+[28910.550568] rcu_sched kthread starved for 928993 jiffies! g59861 c59860 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x0 ->cpu=1
+[32570.466597] INFO: rcu_sched self-detected stall on CPU
+[32570.466653] INFO: rcu_sched detected stalls on CPUs/tasks:
+[32570.467545] 	1-...!: (1 GPs behind) idle=24e/140000000000001/0 softirq=85671/85745 fqs=0 
+[32570.470888] 	1-...!: (1 GPs behind) idle=24e/140000000000001/0 softirq=85671/85745 fqs=0 
+[32570.470936] 	 (t=365636 jiffies g=59892 c=59891 q=188)
+[32570.472270] 	(detected by 0, t=365636 jiffies, g=59892, c=59891, q=188)
+[32570.474398] rcu_sched kthread starved for 365636 jiffies! g59892 c59891 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[32570.477587] rcu_sched kthread starved for 365636 jiffies! g59892 c59891 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[32570.486653] INFO: rcu_sched detected stalls on CPUs/tasks:
+[32570.487715] 	1-...!: (0 ticks this GP) idle=24e/140000000000000/0 softirq=85746/85746 fqs=0 
+[32570.489444] 	(detected by 0, t=915396 jiffies, g=59892, c=59891, q=189)
+[32570.490646] rcu_sched kthread starved for 915396 jiffies! g59892 c59891 f0x2 RCU_GP_WAIT_FQS(3) ->state=0x200 ->cpu=0
+[39062.197044] INFO: rcu_sched self-detected stall on CPU
+[39062.197104] INFO: rcu_sched detected stalls on CPUs/tasks:
+[39062.198229] 	1-...!: (1 ticks this GP) idle=24e/140000000000001/0 softirq=86458/86458 fqs=0 
+[39062.202932] 	1-...!: (1 ticks this GP) idle=24e/140000000000001/0 softirq=86458/86458 fqs=0 
+[39062.203420] 	 (t=524156 jiffies g=59945 c=59944 q=506)
+[39062.204390] 	(detected by 0, t=524156 jiffies, g=59945, c=59944, q=506)
+[39062.212448] rcu_sched kthread starved for 524156 jiffies! g59945 c59944 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[39062.212906] rcu_sched kthread starved for 524156 jiffies! g59945 c59944 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[39062.220814] INFO: rcu_sched detected stalls on CPUs/tasks:
+[39062.220818] 	1-...!: (1 ticks this GP) idle=24e/140000000000001/0 softirq=86458/86458 fqs=0 
+[39062.220818] 	(detected by 0, t=1623673 jiffies, g=59945, c=59944, q=506)
+[39062.221865] rcu_sched kthread starved for 1623673 jiffies! g59945 c59944 f0x2 RCU_GP_WAIT_FQS(3) ->state=0x0 ->cpu=0
+[40596.659116] INFO: rcu_sched self-detected stall on CPU
+[40596.660105] 	0-...!: (1 ticks this GP) idle=046/140000000000001/0 softirq=528365/528365 fqs=0 
+[40596.661030] INFO: rcu_sched self-detected stall on CPU
+[40596.661601] 	 (t=383531 jiffies g=59989 c=59988 q=35)
+[40596.662616] 	1-...!: (1 ticks this GP) idle=24e/140000000000001/0 softirq=86710/86710 fqs=0 
+[40596.663492] rcu_sched kthread starved for 383531 jiffies! g59989 c59988 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[40596.664842] 	 (t=383531 jiffies g=59989 c=59988 q=35)
+[40596.669297] rcu_sched kthread starved for 383531 jiffies! g59989 c59988 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[43326.244969] INFO: rcu_sched self-detected stall on CPU
+[43326.244999] INFO: rcu_sched self-detected stall on CPU
+[43326.247009] 	1-...!: (1 GPs behind) idle=24e/140000000000001/0 softirq=87286/87287 fqs=0 
+[43326.273417] 	
+[43326.273422] 	0-...!: (1 ticks this GP) idle=12e/140000000000001/0 softirq=528501/528501 fqs=0 
+[43326.273426] rcu_sched kthread starved for 132234 jiffies! g60032 c60031 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[43326.273824] 	 (t=132234 jiffies g=60032 c=60031 q=1067)
+[43326.284352] rcu_sched kthread starved for 132234 jiffies! g60032 c60031 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[43326.290780] INFO: rcu_sched self-detected stall on CPU
+[43326.291854] 	0-...!: (2 ticks this GP) idle=12e/140000000000001/0 softirq=528501/528501 fqs=0 
+[43326.293772] 	 (t=682002 jiffies g=60032 c=60031 q=1075)
+[43326.294954] rcu_sched kthread starved for 682002 jiffies! g60032 c60031 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x0 ->cpu=0
+[43326.294957] INFO: rcu_sched self-detected stall on CPU
+[43326.302340] 	1-...!: (1 ticks this GP) idle=24e/140000000000001/0 softirq=87288/87288 fqs=1 
+[43326.304368] 	 (t=682005 jiffies g=60032 c=60031 q=1112)
+[55017.833160] INFO: rcu_sched self-detected stall on CPU
+[55017.834420] 	0-...!: (1 ticks this GP) idle=996/140000000000001/0 softirq=529913/529915 fqs=0 
+[55017.838516] 	
+[55017.838518] INFO: rcu_sched detected stalls on CPUs/tasks:
+[55017.838524] rcu_sched kthread starved for 193609 jiffies! g60492 c60491 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=1
+[55017.838882] 	0-...!: (1 ticks this GP) idle=996/140000000000001/0 softirq=529913/529915 fqs=0 
+[55017.841841] 	(detected by 1, t=193609 jiffies, g=60492, c=60491, q=53)
+[55017.845826] rcu_sched kthread starved for 193609 jiffies! g60492 c60491 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x200 ->cpu=1
+[55389.680822] INFO: rcu_sched self-detected stall on CPU
+[55389.681207] INFO: rcu_sched detected stalls on CPUs/tasks:
+[55389.681955] 	0-...!: (1 GPs behind) idle=996/140000000000001/0 softirq=530173/530174 fqs=0 
+[55389.693787] 	 (t=92933 jiffies g=60536 c=60535 q=48)
+[55389.693811] 	0-...!: (1 GPs behind) idle=996/140000000000001/0 softirq=530173/530174 fqs=0 
+[55389.695272] rcu_sched kthread starved for 92933 jiffies! g60536 c60535 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=1
+[55389.697671] 	(detected by 1, t=92933 jiffies, g=60536, c=60535, q=48)
+[55389.698706] rcu_sched kthread starved for 92933 jiffies! g60536 c60535 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=1
