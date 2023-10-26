@@ -802,3 +802,42 @@ ubuntu-bionic login: [ 9306.215867] watchdog: BUG: soft lockup - CPU#1 stuck f
 [55389.695272] rcu_sched kthread starved for 92933 jiffies! g60536 c60535 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=1
 [55389.697671] 	(detected by 1, t=92933 jiffies, g=60536, c=60535, q=48)
 [55389.698706] rcu_sched kthread starved for 92933 jiffies! g60536 c60535 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=1
+[122701.760698] INFO: rcu_sched self-detected stall on CPU
+[122701.762478] 	1-...!: (1 ticks this GP) idle=076/1/0 softirq=424782/424782 fqs=0 
+[122701.768406] 	 (t=4514501 jiffies g=457133 c=457132 q=0)
+[122701.771369] rcu_sched kthread starved for 4514501 jiffies! g457133 c457132 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=1
+[128089.094630] watchdog: BUG: soft lockup - CPU#0 stuck for 5018s! [apt-get:14224]
+[128089.094691] INFO: rcu_sched self-detected stall on CPU
+[128089.097969] 	1-...!: (1 GPs behind) idle=07a/140000000000001/0 softirq=425105/425108 fqs=0 
+[128089.099484] 	
+[128089.099492] rcu_sched kthread starved for 247882 jiffies! g457190 c457189 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[128089.101699] INFO: rcu_sched self-detected stall on CPU
+[128089.103433] INFO: rcu_sched detected stalls on CPUs/tasks:
+[128089.104005] 	1-...!: (1 GPs behind) idle=07a/140000000000001/0 softirq=425105/425108 fqs=0 
+[128089.107674] 	 (t=1347395 jiffies g=457190 c=457189 q=120)
+[128089.107690] 	1-...!: (1 GPs behind) idle=07a/140000000000001/0 softirq=425105/425108 fqs=0 
+[128089.108605] rcu_sched kthread starved for 1347395 jiffies! g457190 c457189 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x200 ->cpu=0
+[128089.110044] 	(detected by 0, t=1347395 jiffies, g=457190, c=457189, q=120)
+[128089.114013] rcu_sched kthread starved for 1347395 jiffies! g457190 c457189 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x200 ->cpu=0
+[133902.540035] INFO: rcu_sched detected stalls on CPUs/tasks:
+[133902.540103] watchdog: BUG: soft lockup - CPU#1 stuck for 5414s! [python3:14246]
+[133902.541328] 	1-...!: (1 ticks this GP) idle=07a/140000000000001/0 softirq=425607/425607 fqs=0 
+[133902.548547] 	
+[133902.562275] INFO: rcu_sched self-detected stall on CPU
+[133902.567507] 	1-...!: (2 ticks this GP) idle=07a/140000000000001/0 softirq=425607/425607 fqs=0 
+[133902.567509] rcu_sched kthread starved for 1453987 jiffies! g457253 c457252 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[133902.569571] 	 (t=1453987 jiffies g=457253 c=457252 q=8)
+[133902.577364] rcu_sched kthread starved for 1453987 jiffies! g457253 c457252 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[137859.515365] INFO: rcu_sched detected stalls on CPUs/tasks:
+[137859.516477] 	(detected by 1, t=302532 jiffies, g=457884, c=457883, q=576)
+[137859.517011] INFO: task jbd2/sda1-8:329 blocked for more than 120 seconds.
+[137859.517662] All QSes seen, last rcu_sched kthread activity 302532 (4329353396-4329050864), jiffies_till_next_fqs=1, root ->qsmask 0x0
+[137859.517708] rcu_sched kthread starved for 302532 jiffies! g457884 c457883 f0x2 RCU_GP_WAIT_FQS(3) ->state=0x200 ->cpu=1
+[137859.536430]       Tainted: G             L   4.15.0-212-generic #223-Ubuntu
+[137859.538693] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[137859.540182] INFO: task systemd-journal:420 blocked for more than 120 seconds.
+[137859.542420]       Tainted: G             L   4.15.0-212-generic #223-Ubuntu
+[137859.544216] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[137859.545623] INFO: task kworker/u4:3:14270 blocked for more than 120 seconds.
+[137859.547620]       Tainted: G             L   4.15.0-212-generic #223-Ubuntu
+[137859.550478] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
